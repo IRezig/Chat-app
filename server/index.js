@@ -10,6 +10,7 @@ const { addUser, removeUser, getUsersInRoom, getUser } = require('./users.js')
 const app = express()
 const server = http.createServer(app)
 const io = socketio(server , {
+  // Add CORS header 
   cors: {
     origin: "http://localhost:3000",
     methods: ["GET", "POST"]

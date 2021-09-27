@@ -33,10 +33,6 @@ export default function Chat({location}) {
     socket.on('message', message => {
       setMessages(messages => [ ...messages, message ]);
     });
-    
-    // socket.on("roomData", ({ users }) => {
-    //   setUsers(users);
-    // });
 }, []);
 
   const sendMessage = (event) => {
