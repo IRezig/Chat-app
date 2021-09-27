@@ -9,8 +9,8 @@ export default function Join() {
 
   return (
     <div className='joinOuterContainer'>
-      <div className='joinInnerrContainer'>
-        <h1 className='heading'>Join</h1>
+      <div className='joinInnerContainer'>
+        <h1 className='heading'>Join the Chat</h1>
         <div> <input placeholder='name' className='joinInput' type='text' onChange={(e) => setName(e.target.value)} /></div>
         <div> <input placeholder='Room' className='joinInput mt-20' type='text' onChange={(e) => setRoom(e.target.value) } /></div>
         <Link 
